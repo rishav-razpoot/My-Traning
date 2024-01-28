@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int fiboncy(int);
+
+
+int main(){
+
+  int num;
+  printf("Enter a value of num: ");
+  scanf("%d", &num);
+
+  int result = fiboncy(num);
+
+  printf("result : %d", result);
+
+}
+
+int fiboncy(int num){
+
+  if (num == 0 ||  num == 1) {
+    return num;
+  } else{
+  	return fiboncy(num - 1) + fiboncy(num -2);
+  }
+}   
